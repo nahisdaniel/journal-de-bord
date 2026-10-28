@@ -6,36 +6,46 @@
   <title>Mon Dashboard</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-stone-900 text-stone-100 min-h-screen p-6">
-  <header class="max-w-4xl mx-auto mb-10 mt-6">
-    <span class="inline-block bg-stone-800 text-stone-300 text-xs tracking-widest uppercase rounded-full px-4 py-1">Semaine 5</span>
-    <h1 class="font-serif italic text-5xl mt-4">Mon journal de bord</h1>
-    <p class="text-stone-400 mt-3 max-w-xl">Chaque jour compte. Voici ou j'en suis dans mon apprentissage.</p>
-  </header>
-  <main class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4">
-    <section class="bg-stone-100 text-stone-900 rounded-3xl p-6">
-      <h2 class="text-stone-500 text-sm">Heures cette semaine</h2>
-      <p class="font-serif italic text-5xl mt-3">5</p>
-    </section>
-    <section class="bg-stone-800 rounded-3xl p-6">
-      <h2 class="text-stone-400 text-sm">Commits</h2>
-      <p class="font-serif italic text-5xl mt-3">42</p>
-    </section>
-    <section class="bg-stone-800 rounded-3xl p-6">
-      <h2 class="text-stone-400 text-sm">Exercices termines</h2>
-      <p class="font-serif italic text-5xl mt-3">1 / 15</p>
-      <div class="h-2 bg-stone-700 rounded-full mt-4">
-        <div class="h-2 bg-amber-200 rounded-full w-[50%]"></div>
+<body class="bg-slate-50 text-slate-800 min-h-screen">
+  <div class="flex min-h-screen">
+    <aside class="hidden sm:flex flex-col w-56 bg-white border-r border-slate-200 p-6">
+      <p class="text-xl font-bold text-blue-600">Mon Journal</p>
+      <nav class="mt-8 space-y-2 text-sm">
+        <a href="#" class="block bg-blue-50 text-blue-700 font-medium rounded-xl px-4 py-2">Accueil</a>
+        <a href="#" class="block text-slate-500 hover:bg-slate-100 rounded-xl px-4 py-2">Exercices</a>
+        <a href="#" class="block text-slate-500 hover:bg-slate-100 rounded-xl px-4 py-2">Journal</a>
+      </nav>
+    </aside>
+    <main class="flex-1 p-6 sm:p-10">
+      <p class="text-sm text-slate-500">Semaine 5</p>
+      <h1 class="text-3xl font-bold mt-1">Bonjour Daniel</h1>
+      <p class="text-slate-500 mt-1">Voici ou tu en es aujourd'hui.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
+        <section class="bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-2xl p-6 shadow-md">
+          <h2 class="text-blue-100 text-sm">Heures cette semaine</h2>
+          <p class="text-5xl font-bold mt-3">5</p>
+        </section>
+        <section class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
+          <h2 class="text-slate-500 text-sm">Commits</h2>
+          <p class="text-5xl font-bold mt-3 text-slate-800">42</p>
+        </section>
+        <section class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100">
+          <h2 class="text-slate-500 text-sm">Exercices termines</h2>
+          <p class="text-5xl font-bold mt-3 text-slate-800">1 / 15</p>
+          <div class="h-2 bg-slate-100 rounded-full mt-4">
+            <div class="h-2 bg-blue-500 rounded-full w-[7%]"></div>
+          </div>
+        </section>
       </div>
-    </section>
-    <section class="bg-stone-800 rounded-3xl p-6 sm:col-span-3">
-      <h2 class="text-stone-400 text-sm mb-4">Dernieres entrees</h2>
-      <ul class="space-y-3">
-        <li class="flex justify-between border-b border-stone-700 pb-3"><span>Dashboard : les chiffres sont en place</span><span class="text-stone-400 text-sm">28 oct</span></li>
-        <li class="flex justify-between border-b border-stone-700 pb-3"><span>Premiere structure du dashboard</span><span class="text-stone-400 text-sm">27 oct</span></li>
-        <li class="flex justify-between"><span>Exercice 1 termine : variables et marge</span><span class="text-stone-400 text-sm">23 oct</span></li>
-      </ul>
-    </section>
-  </main>
+      <section class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 mt-4">
+        <h2 class="font-semibold mb-4">Dernieres entrees</h2>
+        <ul class="space-y-4">
+          <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-blue-500"></span><span class="flex-1">Dashboard : les chiffres sont en place</span><span class="text-slate-400 text-sm">28 oct</span></li>
+          <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-blue-500"></span><span class="flex-1">Premiere structure du dashboard</span><span class="text-slate-400 text-sm">27 oct</span></li>
+          <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-emerald-500"></span><span class="flex-1">Exercice 1 termine : variables et marge</span><span class="text-slate-400 text-sm">23 oct</span></li>
+        </ul>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
