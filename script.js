@@ -7,9 +7,17 @@ const affaires = [
 {nom: "Moreau", prix: 3000, cout: 2200}
 ];
 let total = 0;
+let pire = affaires[0].prix - affaires[0].cout;
+let nomPire = affaires[0].nom;
 for (const affaire of affaires) {console.log (affaire.nom);
 console.log (affaire.prix - affaire.cout);
 total= total + (affaire.prix- affaire.cout);
-};
+if (affaire.prix - affaire.cout < pire) {
+pire = (affaire.prix - affaire.cout);
+nomPire = affaire.nom;
+}
+}
+console.log (nomPire);
+console.log (pire);
 console.log (total);
 
