@@ -1,3 +1,4 @@
+// Ce script calcule la marge de chaque affaire, le total des marges et la pire affaire.
 const affaires = [
 {nom: "Dupont", prix: 1200, cout: 800},
 {nom: "Martin", prix: 900, cout: 1000},
